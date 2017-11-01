@@ -1,15 +1,15 @@
 # vue-project-setup #
 
-**本套构建项目主要涉及到的功能模块有
+**本套构建项目主要涉及到的功能模块有**
 1. 通过webpack 实现热更新 <br>
 2. 实现了使用proxy + axios代理请求(既能隐藏请求域名,又能解决跨域) <br>
 3. 配置了vue2.0+ + vue-router(hash/history mode) + vuex + axios
 4. 启用vscode + eslint 实现代码格式化并且保存自动修复eslint
 
-*** dev 环境
+*** dev 环境 ***
 使用 supervisor + node-express 启动服务 
 
-*** production 环境
+*** production 环境 ***
 使用 pm2 + node-express 启动服务
 
 **webpack配置**<br>
