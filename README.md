@@ -7,9 +7,11 @@
 4. 启用vscode + eslint 实现代码格式化并且保存自动修复eslint
 
 *** dev 环境 ***
+>
 使用 supervisor + node-express 启动服务 
 
 *** production 环境 ***
+>
 使用 pm2 + node-express 启动服务
 
 **webpack配置**<br>
