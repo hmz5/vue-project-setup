@@ -1,0 +1,275 @@
+/**
+ * @Des     function scss
+ * @Author  H_MZ
+ */
+
+
+/**
+ * 声明该元素使用flex布局
+ */
+
+.f-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+/**
+ * 子元素水平排列
+ */
+
+.f-flexr {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+}
+
+
+/**
+ * 子元素垂直排列
+ */
+
+.f-flexc {
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+
+/**
+ * 子元素水平居中排列
+ */
+
+.f-flextc {
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+/**
+ * 子元素垂直居中排列
+ */
+
+.f-flexvc {
+    -webkit-box-pack: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+/**
+ * 子元素超出换行
+ */
+
+.f-flex-wrap {
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+/**
+ * 子元素分配剩余空间
+ */
+
+.f-flex1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+// 清除浮动
+.f-cb:after,
+.f-cbli li:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+}
+
+.f-cb,
+.f-cbli li {
+    zoom: 1;
+}
+
+// 定义元素如何显示
+.f-dib {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.f-di {
+    display: inline;
+}
+
+.f-dn {
+    display: none !important;
+}
+
+.f-db {
+    display: block;
+}
+
+.f-dt {
+    display: table;
+}
+
+.f-dtr {
+    display: table-row;
+}
+
+.f-dtc {
+    display: table-cell;
+}
+
+// 定义浮动
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.f-fn {
+    float: none;
+}
+
+// 定义元素定位类型
+.f-pr {
+    position: relative;
+}
+
+.f-pa {
+    position: absolute;
+}
+
+.f-pf {
+    position: fixed;
+}
+
+// 定义元素超出隐藏
+.f-oh {
+    overflow: hidden;
+}
+
+// 定义字体相关样式
+.f-tal {
+    text-align: left;
+}
+
+.f-tac {
+    text-align: center;
+}
+
+.f-tar {
+    text-align: right;
+}
+
+.f-fwb {
+    font-weight: bold;
+}
+
+.f-tdu,
+.f-tdu:hover {
+    text-decoration: underline;
+}
+
+.f-tduo {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.f-tdn,
+.f-tdn:hover {
+    text-decoration: none;
+}
+
+// 溢出单行文本显示省略号
+.f-toe {
+    overflow: hidden;
+    word-wrap: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+// 溢出文本强制换行
+.f-pre {
+    overflow: hidden;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+// 定义鼠标悬浮样式
+.f-csp {
+    cursor: pointer;
+}
+
+// 定义子元素垂直显示样式
+.f-vat,
+.f-vata * {
+    vertical-align: top;
+}
+
+.f-vab,
+.f-vaba * {
+    vertical-align: bottom;
+}
+
+.f-vam,
+.f-vama * {
+    vertical-align: middle;
+}
+
+// 表格布局固定
+.f-tlf {
+    table-layout: fixed;
+}
+
+// 溢出弹性滚动
+.f-ot {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+// 块级元素内行内元素垂直居中
+.f-vcenter {
+    &>* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:after {
+        content: "";
+        height: 100%;
+        width: 0;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 377260 */
+    src: url('//at.alicdn.com/t/font_377260_rdwx3bj6q392j4i.eot');
+    src: url('//at.alicdn.com/t/font_377260_rdwx3bj6q392j4i.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_377260_rdwx3bj6q392j4i.woff') format('woff'), url('//at.alicdn.com/t/font_377260_rdwx3bj6q392j4i.ttf') format('truetype'), url('//at.alicdn.com/t/font_377260_rdwx3bj6q392j4i.svg#iconfont') format('svg');
+}
+
+.f-iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,6 @@
+/node_modules
+/.idea
+/logs
+/.vscode
+npm-debug.log
+.npmignore
