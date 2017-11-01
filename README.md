@@ -6,12 +6,10 @@
 3. 配置了vue2.0+ + vue-router(hash/history mode) + vuex + axios
 4. 启用vscode + eslint 实现代码格式化并且保存自动修复eslint
 
-*** dev 环境 ***
->
+**dev 环境**
 使用 supervisor + node-express 启动服务 
 
-*** production 环境 ***
->
+**production 环境**
 使用 pm2 + node-express 启动服务
 
 **webpack配置**<br>
